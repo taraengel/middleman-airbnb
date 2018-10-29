@@ -1,0 +1,20 @@
+<div id="about">
+  <div class="team-content">
+    <h1>This template was built with <i class="fas fa-heart"></i></h1>
+      <ul class="list-inline text-center">
+        <% data.team_members.each do |member| %>
+          <li>
+            <% link_to "https://kitt.lewagon.com/alumni/#{member.github_nickname}", target: "_blank" do %>
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{member.github_nickname}", class: "img-circle" %>
+            <% end %>
+            <h2><%= member.name %></h2>
+            <p>
+              <% link_to "https://github.com/#{member.github_nickname}", target: "_blank" do %>
+                <i class="fab fa-github"></i> <%= member.github_nickname %>
+              <% end %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>

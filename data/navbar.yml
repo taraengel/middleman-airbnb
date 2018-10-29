@@ -1,0 +1,6 @@
+#
+# <% w%(host trips messages).each do |link_item| %>
+
+# <% end %>
+
+  # <%= link_to "Info you need", "/navbar.yml", class: "navbar-wagon-item navbar-wagon-link %>"
